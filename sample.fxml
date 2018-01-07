@@ -1,0 +1,62 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <HBox>
+            <MenuBar prefWidth="300">
+                <Menu text="File">
+                    <MenuItem text="File"></MenuItem>
+                    <MenuItem text="Edit"></MenuItem>
+                    <SeparatorMenuItem></SeparatorMenuItem>
+                    <MenuItem text="Retrieve"></MenuItem>
+                </Menu>
+                <Menu text="Edit"></Menu>
+                <Menu text="Retrieve"></Menu>
+            </MenuBar>
+        </HBox>
+    </top>
+    <center>
+    <GridPane>
+        <padding>
+            <Insets top="10" bottom="10" left="10" right="10"></Insets>
+        </padding>
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0">First Name: </Label>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <tooltip>
+            <Tooltip text="First Name"></Tooltip>
+        </tooltip>
+    </TextField>
+
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0">Last Name: </Label>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <tooltip>
+            <Tooltip text="Last Name"></Tooltip>
+        </tooltip>
+    </TextField>
+
+    <Label GridPane.rowIndex="2" GridPane.columnIndex="0">Age: </Label>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <tooltip>
+            <Tooltip text="Age"></Tooltip>
+        </tooltip>
+    </TextField>
+
+    <Label GridPane.rowIndex="3" GridPane.columnIndex="0">Gender: </Label>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <tooltip>
+            <Tooltip text="Gender"></Tooltip>
+        </tooltip>
+    </TextField>
+
+    <Label GridPane.rowIndex="4" GridPane.columnIndex="0">City: </Label>
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <tooltip>
+            <Tooltip text="City"></Tooltip>
+        </tooltip>
+    </TextField>
+    <Button text="Submit" onMouseClicked="#submitInformation" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2" prefHeight="40" maxWidth="250"/>
+    </GridPane>
+    </center>
+</BorderPane>
