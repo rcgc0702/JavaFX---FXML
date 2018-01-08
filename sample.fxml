@@ -2,10 +2,12 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <BorderPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
     <top>
         <HBox>
-            <MenuBar prefWidth="300">
+            <MenuBar prefWidth="500">
                 <Menu text="File">
                     <MenuItem text="File"></MenuItem>
                     <MenuItem text="Edit"></MenuItem>
@@ -59,4 +61,16 @@
     <Button text="Submit" onMouseClicked="#submitInformation" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="2" prefHeight="40" maxWidth="250"/>
     </GridPane>
     </center>
+    <right>
+        <VBox minWidth="250" maxWidth="250">
+            <padding>
+                <Insets top="20"></Insets>
+            </padding>
+            <ImageView preserveRatio="true" fitWidth="200">
+                <image>
+                    <Image url="@../DSC_0009.JPG"/>
+                </image>
+            </ImageView>
+        </VBox>
+    </right>
 </BorderPane>
