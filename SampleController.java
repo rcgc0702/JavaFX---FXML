@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class Controller {
+public class SampleController {
 
     @FXML Button thebutton;
     @FXML TextField field1;
